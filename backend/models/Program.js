@@ -1,0 +1,39 @@
+const mongoose = require("mongoose");
+
+const ProgramSchema = new mongoose.Schema({
+
+  programId: {
+    type: String,
+    required: true,
+    unique: true
+  },
+
+  name: {
+    type: String,
+    required: true
+  },
+
+  category: {
+    type: String,
+    required: true
+  },
+
+  level: {
+    type: String,
+    enum: ["Beginner","Intermediate","Advanced"]
+  },
+
+  price: {
+    type: Number,
+    required: true,
+    min: 0
+  },
+
+  createdAt: {
+    type: Date,
+    default: Date.now
+  }
+
+});
+
+module.exports = mongoose.model("Program", ProgramSchema);
