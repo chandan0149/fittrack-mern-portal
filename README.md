@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FitTrack – Personal Fitness Training Portal
 
 ## Project Overview
@@ -220,3 +221,7 @@ README.md
 CHANDAN KUMAR
 
 Final Milestone MERN Assessment Project
+=======
+# fittrack-mern-portal
+FitTrack MERN Personal Fitness Training Portal
+6ca588cae73545a68b8744b2f1b48b1050281e70
